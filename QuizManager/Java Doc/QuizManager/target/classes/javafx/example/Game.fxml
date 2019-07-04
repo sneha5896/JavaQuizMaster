@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.example.GameController">
+   <children>
+      <HBox layoutX="21.0" layoutY="80.0" spacing="27.0" />
+      <Label fx:id="lbName" alignment="CENTER" contentDisplay="CENTER" layoutX="717.0" layoutY="33.0" prefHeight="26.0" prefWidth="195.0" text="Student Name:" textFill="#dd0b0b" />
+      <Label fx:id="lbTopic" layoutX="21.0" layoutY="27.0" prefHeight="32.0" prefWidth="580.0" text="Topic " textFill="#3f0bdb">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="74.0" prefHeight="32.0" prefWidth="580.0" text="Title" textFill="#0d33d9">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbQuestion" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="112.0" prefHeight="48.0" prefWidth="880.0" text="Question" textFill="#d90d99">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdAnswer1" layoutX="109.0" layoutY="472.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="773.0" text="RadioButton" />
+      <RadioButton fx:id="rdAnswer2" layoutX="109.0" layoutY="517.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="773.0" text="RadioButton" />
+      <RadioButton fx:id="rdAnswer3" layoutX="109.0" layoutY="562.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="773.0" text="RadioButton" />
+      <RadioButton fx:id="rdAnswer4" layoutX="109.0" layoutY="608.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="773.0" text="RadioButton" />
+      <Button fx:id="btNext" layoutX="383.0" layoutY="663.0" mnemonicParsing="false" onAction="#handleNextAction" prefHeight="40.0" prefWidth="258.0" text="Next" />
+      <TextArea fx:id="taContents" layoutX="85.0" layoutY="191.0" prefHeight="268.0" prefWidth="818.0" />
+      <Button fx:id="btViewResult" layoutX="664.0" layoutY="663.0" mnemonicParsing="false" onAction="#handleViewResult" prefHeight="40.0" prefWidth="258.0" text="View Result" />            
+   </children>
+</AnchorPane>

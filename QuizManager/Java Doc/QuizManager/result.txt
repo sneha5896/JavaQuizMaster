@@ -1,0 +1,105 @@
+Student : 11
+
+=================================================================
+
+Title : Java Object Oriented Programming Quiz 6
+Question : 1. What will happen when you compile and run the following code?
+
+------------------Contents-----------------------
+class One{
+	private void count(int i){
+		System.out.println(0);
+	}
+}
+public class Test extends One{	
+	
+	public void count(int j){
+		System.out.println(1);
+	}
+	
+	public static void main(String[] args) {
+		One one = new Test();
+		one.count(0);
+	}
+}
+
+-------------------Answers-----------------------
+1
+0
+Compilation error
+Runtime error
+
+-----------------Your Answer---------------------
+Compilation error
+
+-----------------Correct Answer-------------------
+Compilation error
+=================================================================
+
+=================================================================
+
+Title : Java Object Oriented Programming Quiz 6
+Question : 2. What will happen when you compile and run the following code?
+
+------------------Contents-----------------------
+public class Test{
+	
+	public static void main(String[] args){		
+		One o = new One();
+		o.sayHello();
+	}	
+}
+
+final abstract class One{
+	public final void sayHello(){
+		System.out.println("Hello");
+	}
+	
+	public abstract void sayHi();
+}
+
+-------------------Answers-----------------------
+ Hello
+Compilation error
+Runtime error
+None of the above
+
+-----------------Your Answer---------------------
+Runtime error
+
+-----------------Correct Answer-------------------
+
+=================================================================
+
+=================================================================
+
+Title : Java Object Oriented Programming Quiz 6
+Question : 3. What will happen when you compile and run the following code?
+
+------------------Contents-----------------------
+public class Test{
+	
+	class TestInner{
+		void sayHi(){
+			System.out.println("Hi");
+		}
+	}
+	
+	public static void main(String[] args) {
+		TestInner inner = new TestInner();
+		inner.sayHi();
+	}
+}
+
+-------------------Answers-----------------------
+Hi
+Compilation error
+No output
+Runtime error
+
+-----------------Your Answer---------------------
+No output
+
+-----------------Correct Answer-------------------
+
+=================================================================
